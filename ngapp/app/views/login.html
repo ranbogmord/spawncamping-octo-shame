@@ -1,0 +1,18 @@
+<h1>Login</h1>
+<div id="login-form">
+	<div class="row">
+		<div class="small-12 columns">
+			<form name="loginForm" ng-submit="submitForm(loginForm.$valid)" novalidate>
+				<div class="row">
+					<input class="small-12 columns" type="text" ng-model="login.username" placeholder="username" required>
+				</div>
+				<div class="row">
+					<input class="small-12 columns" type="password" ng-model="login.password" placeholder="password" required>
+				</div>
+				<div class="row">
+					<button class="button small-12 columns">log in.</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

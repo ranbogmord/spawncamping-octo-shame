@@ -1,0 +1,15 @@
+<div class="small-12 large-3 columns">
+	<h2> {{ user }} </h2>
+</div>
+<div class="small-12 large-9 columns">
+	<h2>Add Event</h2>
+	<div class="add-event-form">
+		<form name="addEventForm" ng-submit="addEvent(addEventForm.$valid)" novalidate>
+			<input type="text" class="small-12 columns" placeholder="event name" ng-model="event.name" required>
+			<input type="date" class="small-12 columns" placeholder="date" ng-model="event.date" required>
+			<textarea class="small-12 columns" placeholder="event description" ng-model="event.desc" required></textarea>
+			<input type="number" class="small-12 columns" placeholder="price" ng-model="event.price" required>
+			<button class="button small-12 columns">Add event</button>
+		</form>
+	</div>
+</div>

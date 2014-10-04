@@ -1,0 +1,13 @@
+<div class="small-12 large-3 columns">
+	<h2> {{ user }} </h2>
+</div>
+<div class="small-12 large-9 columns">
+	<h2>Events <span class="add"><a href="#/add-event">Add new</a></span></h2>
+	<div class="event-list">
+		<ul>
+			<li ng-repeat="event in events">
+				<a href="#/events/{{ event._id }}">{{ event.name }}</a> - {{ event.date }}
+			</li>
+		</ul>
+	</div>
+</div>
